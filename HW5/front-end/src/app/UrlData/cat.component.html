@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align: center">
+  <button (click)="getList()"> Meow Meow </button>
+  <div *ngFor="let item of list | keyvalue">
+    <img src={{item.value}} height="200" width="200" />
+  </div>
+  <a href="http://localhost:3000/auth/google">
+    <button> Login with Google </button>
+  </a>
+</div>
